@@ -1,0 +1,104 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+margin: 0;
+padding: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+/* Two */
+
+#section-two {
+  display: flex;
+  justify-content: space-evenly;
+}
+#section-two span {
+  display: block;
+  max-width: 93%;
+  padding: 10% 0;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 2px 13px 10px 0px rgba(214, 197, 197, 0.75);
+  border-bottom: 1px dotted red;
+  font-weight: 600;
+  position: relative;
+  bottom: 13%;
+  font-size: 1.5em;
+}
+
+/* Three */
+
+#section-three {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0%;
+}
+#section-three .sec-one {
+  margin-left: 5%;
+}
+#section-three img {
+  width: 120%;
+  background-color: red;
+}
+#section-three #img-span {
+  color: white;
+  font-weight: 600;
+  padding: 5% 8%;
+  background-color: brown;
+  position: relative;
+  bottom: 215px;
+  right: 25%;
+  display: block;
+  max-width: 65%;
+  margin: 0 auto;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+#section-three .sec-two {
+  margin: -42px 0 0 -10px;
+  max-width: 40%;
+}
+#section-three h2 {
+  font-size: 2.9em;
+}
+#section-three p {
+  font-size: 1.44em;
+  line-height: 36px;
+  margin-bottom: 140px;
+}
+#section-three span {
+  color: burlywood;
+}
+#section-three a {
+  color: white;
+  background-color: brown;
+  text-decoration: none;
+  padding: 3.5% 9%;
+  font-size: 1.25em;
+}
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
