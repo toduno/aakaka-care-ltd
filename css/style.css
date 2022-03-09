@@ -13,7 +13,10 @@ body {
 margin: 0;
 padding: 0;
 }
-
+:root {
+  --dark-color: brown;
+  --light-color: burlywood;
+}
 
 /******************************************
 /* LAYOUT
@@ -60,40 +63,76 @@ header {
   color: white;
   font-weight: 600;
   padding: 5% 8%;
-  background-color: brown;
+  background-color: var(--dark-color);
   position: relative;
-  bottom: 215px;
-  right: 25%;
+  bottom: 180px;
+  right: 15%;
   display: block;
-  max-width: 65%;
+  max-width: 100%;
   margin: 0 auto;
   font-size: 1.9em;
   text-align: center;
 }
 
 #section-three .sec-two {
-  margin: -42px 0 0 -10px;
+  margin: -42px 0 0 0;
   max-width: 40%;
 }
 #section-three h2 {
   font-size: 2.9em;
 }
-#section-three p {
+#section-three p,
+#section-five p,
+#section-six p {
   font-size: 1.44em;
   line-height: 36px;
-  margin-bottom: 140px;
+  margin-bottom: 70px;
 }
 #section-three span {
-  color: burlywood;
+  color: var(--light-color);
 }
 #section-three a {
   color: white;
-  background-color: brown;
+  background-color: var(--dark-color);
   text-decoration: none;
   padding: 3.5% 9%;
   font-size: 1.25em;
 }
 
+/* Five */
+
+#section-five {
+  color: #fff;
+  background-color: var(--dark-color);
+  padding: 3% 2%;
+}
+#section-five h3 {
+  font-size: 2.4em;
+  text-align: center;
+}
+.sec-five-sec, #section-six  {
+  display: flex;
+  justify-content: space-between;
+}
+#section-five h4 {
+  font-size: 1.7em;
+} 
+
+/* Six */
+
+#section-six {
+  padding: 3% 8.5% 3% 10%;
+}
+#section-six img {
+  width: 100%;
+  background-color: red;
+}
+#section-six .sec-six-sec {
+ max-width: 53%;
+}
+#section-six h3 {
+  font-size: 2.4em;
+}
 
 footer {
 
